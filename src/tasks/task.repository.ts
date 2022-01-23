@@ -3,7 +3,7 @@ import { EntityRepository, Repository } from 'typeorm';
 import { Task } from './task.entity';
 import { TaskStatusEnum } from './tasks-status.enum';
 import { GetTaskFilterDto } from './dto/get-task-filter.dto';
-import { User } from 'src/auth/user.entity';
+import { User } from '../auth/user.entity';
 import { InternalServerErrorException, Logger } from '@nestjs/common';
 @EntityRepository(Task)
 export class TasksRepository extends Repository<Task> {
